@@ -1,0 +1,27 @@
+extends layout.pug
+
+block content
+  button#new-card New Card
+  button#clear-board Clear Board
+  table(class="table table-bordered table-responsive")
+    thead
+      tr
+        each ltr in ["B", "I", "N", "G", "O"]
+          != `<th scope="col" class="${ltr}${ltr}">${ltr}</th>`
+    tbody
+      tr
+        each j in ["B", "I", "N", "G", "O"]
+          != '<td id="'+j+'1"'+'>'+'</td>'
+      tr
+        each j in ["B", "I", "N", "G", "O"]
+          != '<td id="'+j+'2"'+'>'+'</td>'
+      tr
+        each j in ["B", "I", "N", "G", "O"]
+          != '<td id="'+j+'3"'+'>'+'</td>'
+      tr
+        each j in ["B", "I", "N", "G", "O"]
+          != '<td id="'+j+'4"'+'>'+'</td>'
+      tr
+        each j in ["B", "I", "N", "G", "O"]
+          != '<td id="'+j+'5"'+'>'+'</td>'
+

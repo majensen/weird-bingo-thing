@@ -1,0 +1,49 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+tbody {
+    width: 1000px;
+}
+td {
+    width: 200px;
+    height: 200px;
+    font-size: 24px;
+
+}
+
+td.cover {
+    background: lavender;
+}
+td.free {
+    background: purple;
+    font-style: italic;
+    color: white;
+}
+th {
+    font-size: 28px;
+}
+th.BB {
+    background: blue;
+    color: white;
+}
+th.II {
+    background: green;
+    color:white;
+}
+th.NN {
+    background: yellow;
+}
+th.GG {
+    background: orange;
+    color:white;
+}
+th.OO {
+    background: red;
+    color:white;
+}
