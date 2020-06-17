@@ -40,7 +40,9 @@ function new_card() {
 
 function toggle_square () {
   if (card.winner) {
-    $("#N3").text("Please click 'New Card' or 'Clear Board' above")
+    $("#N3").get(0).innerHTML='<button class="btn btn-primary" id="nc">New Card</button><button class="btn btn-primary" id="cb">Clear Board</button>';
+    $("#nc").off('click').click(new_card)
+    $("#cb").off('click').click(clear_board)
     return
   }
   else if ($(this).hasClass('cover')) {
