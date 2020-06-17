@@ -87,9 +87,10 @@ function check_bingo() {
       winner = 1;
     }
   }
-  if (winner) {
+    if (winner) {
+
     $("#N3").get(0)
-      .innerHTML=gifs.gifs[ _.toInteger(Math.random()*gifs.gifs.length)]
+	    .innerHTML=gifs.gifs[Math.floor(Math.random()*gifs.gifs.length) ]
     card.winner=1;
     console.log("BINGO!!!");
   }
