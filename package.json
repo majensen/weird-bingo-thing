@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "build": "browserify ./public/javascripts/actions.js > ./public/javascripts/bundle.js",
-      "start": "node ./bin/www",
-      "start-bg": "PORT=3003 node ./bin/www &",
     "watch": "watchify ./public/javascripts/actions.js -o ./public/javascripts/bundle.js &",
-    "unwatch": "PID=$(ps | grep watchify | grep -v grep | { read i j ; echo $i ; }) ; [[ -n $PID ]] && kill $PID ; exit 0"
+    "unwatch": "PID=$(ps | grep watchify | grep -v grep | { read i j ; echo $i ; }) ; [[ -n $PID ]] && kill $PID ; exit 0",
+    "start": "node ./bin/www",
+    "start-bg": "PORT=3003 node ./bin/www & >> bingo.log",
+    "stop-bg": "PID=$(ps | grep 'node .*www' | grep -v grep | { read i j ; echo $i ; }) ; [[ -n $PID ]] && kill $PID ; exit 0"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
