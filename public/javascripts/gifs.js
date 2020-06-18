@@ -1,4 +1,5 @@
 gifs = [
+    
   '<iframe src="https://giphy.com/embed/U56VoSyFD8MFcie2k8" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/MXPlayerOfficial-good-correct-thatsaboutit-U56VoSyFD8MFcie2k8">via GIPHY</a></p>',
   '<iframe src="https://giphy.com/embed/3oFzlUq9gpFanxX1f2" width="480" height="472" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/teachersseries-tv-land-teacher-3oFzlUq9gpFanxX1f2">via GIPHY</a></p>',
   '<iframe src="https://giphy.com/embed/3oEdv3Ul8g6BCngQ36" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/the-last-man-on-earth-the-last-man-on-earth-lmoe-3oEdv3Ul8g6BCngQ36">via GIPHY</a></p>',
