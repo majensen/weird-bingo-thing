@@ -1,0 +1,23 @@
+% layout 'default';
+% title 'CRDC Bingo!';
+  <button id="new-card" class="btn btn-primary">New Card</button>
+  <button id="clear-board" class="btn btn-primary">Clear Board</button>
+  <table class="table table-bordered table-responsive">
+    <thead>
+      <tr>
+	% for my $ltr (qw/B I N G O/) {
+	<th scope="col" class="<%= $ltr.$ltr =%>"><%= $ltr =%></th>
+	% }
+      </thead>
+    <tbody>
+      % for my $i (1..5) {
+      <tr>
+        % for my $ltr (qw/B I N G O/) {
+	<td id="<%=$ltr.$i=%>"></td>
+	% }
+      </tr>
+      % }
+    </tbody>
+  </table>
+
+

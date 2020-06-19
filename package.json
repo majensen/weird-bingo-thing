@@ -11,6 +11,7 @@
     "stop-bg": "PID=$(ps | grep 'node .*www' | grep -v grep | { read i j ; echo $i ; }) ; [[ -n $PID ]] && kill $PID ; exit 0"
   },
   "dependencies": {
+    "browserify": "^16.5.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
