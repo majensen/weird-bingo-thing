@@ -17,7 +17,22 @@ $(function () {
     .off('click')
   $("#new-card").click(new_card)
   $("#clear-board").click(clear_board)
+  $("#help").click( () => {
+    $("#help-div").get(0).innerHTML =
+'<div class="alert alert-info alert-dismissible fade show" role="alert"> \
+<button type="button" class="close" data-dismiss="alert" aria-label="Close"> \
+  <span aria-hidden="true">&times;</span> \
+</button> \
+This is your Bingo card.<p><ul> \
+<li>Click any square to mark it as complete (it becomes shaded purple).</li> \
+<li>You can click New Card if you don’t like the card you have.</li>\
+<li>You can click Clear Board to start over on the same card.</li> \
+<li>Click a horizontal/vertical/diagonal line of squares (BINGO!) to get a surprise.</li></ul> \
+</div>'
+  }) 
+  $('.alert').alert()
 })
+
 
 function clear_board() {
   for (let i=0; i<5;i++) {

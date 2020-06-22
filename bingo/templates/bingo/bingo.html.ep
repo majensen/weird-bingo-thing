@@ -1,5 +1,7 @@
 % layout 'default';
 % title 'CRDC Bingo!';
+  <div id="help-div"></div>
+  <button id="help" class="btn btn-info">Help</button>
   <button id="new-card" class="btn btn-primary">New Card</button>
   <button id="clear-board" class="btn btn-primary">Clear Board</button>
   <table class="table table-bordered table-responsive">
